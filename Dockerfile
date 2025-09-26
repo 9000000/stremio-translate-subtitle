@@ -9,7 +9,7 @@ COPY . .
 RUN npm install
 
 # Nếu cần build, thêm lệnh build ở đây (nếu dự án dùng TypeScript hoặc build frontend)
-# RUN npm run build
+RUN npm run build
 
 # Chạy ứng dụng (tuỳ vào entry point, ví dụ index.js hoặc app.js)
 CMD ["node", "index.js"]
